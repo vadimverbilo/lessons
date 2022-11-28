@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма заявки</title>
+  <style>
+    .colortext {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<form action="handler.php">
+  <h2>Форма заявки на работу в зоопарке</h2>
+  <p><i>Пожалуйста, заполните форму. Обязательные поля помечены<span class="colortext">*</span></i></p>
+
+  <fieldset>
+    <legend><strong>Контактная информация</strong></legend>
+    <p>Имя <span class="colortext">*</span> <input type="text" name="name" style=position:absolute;left:8%;></p>
+    <p>Телефон <input type="tel" name="tel" style=position:absolute;left:8%;></p>
+    <p>Email <span class="colortext">*</span> <input type="email" name="email" style=position:absolute;left:8%;></p>
+  </fieldset>
+
+  <fieldset>
+    <legend><strong>Персональная информация</strong></legend>
+    <p>Возвраст <span class="colortext">*</span> <input type="number" name="age" style=position:absolute;left:8%;></p>
+    <p>Пол <select name="select" size="1" style=position:absolute;left:8%;>
+    <option selected value="s1">Женщина</option>
+      <option value="s2">Мужчина</option>
+    </select>
+    <p><label for="comments">Перечислите<textarea style=position:absolute;left:8%; id="comments"></textarea>
+      <br>личные
+      <br>качества</label></p>
+  </fieldset>
+
+    <fieldset>
+    <legend><strong>Выберите ваших любимых животных</strong></legend>
+      <p><input type="checkbox"> Зебра
+        <input type="checkbox"> Кошак
+        <input type="checkbox"> Анаконда
+        <input type="checkbox"> Человек</p>
+      <p><input type="checkbox"> Слон
+        <input type="checkbox"> Антилопа
+        <input type="checkbox"> Голубь
+        <input type="checkbox"> Краб</p>
+    </fieldset>
+
+      <p><input type="submit" value="Отправить информацию"></p>
+</form>
+
+</body>
+</html>
