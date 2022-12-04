@@ -25,7 +25,7 @@
   <fieldset>
     <legend><strong>Персональная информация</strong></legend>
     <p>Возвраст <span class="colortext">*</span> <input type="number" name="age" style=position:absolute;left:8%;></p>
-    <p>Пол <select name="select" size="1" style=position:absolute;left:8%;>
+    <p>Пол <select name="select" size="1" style=position:absolute;left:8%;></p>
     <option selected value="s1">Женщина</option>
       <option value="s2">Мужчина</option>
     </select>
@@ -36,18 +36,16 @@
 
     <fieldset>
     <legend><strong>Выберите ваших любимых животных</strong></legend>
-      <p><input type="checkbox"> Зебра
-        <input type="checkbox"> Кошак
-        <input type="checkbox"> Анаконда
-        <input type="checkbox"> Человек</p>
-      <p><input type="checkbox"> Слон
-        <input type="checkbox"> Антилопа
-        <input type="checkbox"> Голубь
-        <input type="checkbox"> Краб</p>
+       <p><lable><input type="checkbox"name="pets"value="1"><span>Зебра</span></lable>
+         <lable><input type="checkbox"name="pets"value="2"><span>Кошак</span></lable>
+         <lable><input type="checkbox"name="pets"value="3"><span>Анаконда</span></lable>
+         <lable><input type="checkbox"name="pets"value="4"><span>Человек</span></lable></p>
+      <p><lable><input type="checkbox"name="pets"value="5"><span>Слон</span></lable>
+         <lable><input type="checkbox"name="pets"value="6"><span>Антилопа</span></lable>
+         <lable><input type="checkbox"name="pets"value="7"><span>Голубь</span></lable>
+         <lable><input type="checkbox"name="pets"value="8"><span>Краб</span></lable></p>
     </fieldset>
-
-      <p><input type="submit" value="Отправить информацию"></p>
+    <br><input type="submit"value="Отправить информацию">
 </form>
-
 </body>
 </html>
