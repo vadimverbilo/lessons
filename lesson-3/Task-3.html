@@ -12,7 +12,7 @@
 <body>
 
 <form action="handler.php">
-  <h2>Форма заявки на работу в зоопарке</h2>
+  <h2> Форма заявки на работу в зоопарке</h2>
   <p><i>Пожалуйста, заполните форму. Обязательные поля помечены<span class="colortext">*</span></i></p>
 
   <fieldset>
@@ -25,10 +25,10 @@
   <fieldset>
     <legend><strong>Персональная информация</strong></legend>
     <p>Возвраст <span class="colortext">*</span> <input type="number" name="age" style=position:absolute;left:8%;></p>
-    <p>Пол <select name="select" size="1" style=position:absolute;left:8%;></p>
+    <p>Пол <select name="select" size="1" style=position:absolute;left:8%;>
     <option selected value="s1">Женщина</option>
       <option value="s2">Мужчина</option>
-    </select>
+    </select></p>
     <p><label for="comments">Перечислите<textarea style=position:absolute;left:8%; id="comments"></textarea>
       <br>личные
       <br>качества</label></p>
@@ -36,16 +36,32 @@
 
     <fieldset>
     <legend><strong>Выберите ваших любимых животных</strong></legend>
-       <p><lable><input type="checkbox"name="pets"value="1"><span>Зебра</span></lable>
-         <lable><input type="checkbox"name="pets"value="2"><span>Кошак</span></lable>
-         <lable><input type="checkbox"name="pets"value="3"><span>Анаконда</span></lable>
-         <lable><input type="checkbox"name="pets"value="4"><span>Человек</span></lable></p>
-      <p><lable><input type="checkbox"name="pets"value="5"><span>Слон</span></lable>
-         <lable><input type="checkbox"name="pets"value="6"><span>Антилопа</span></lable>
-         <lable><input type="checkbox"name="pets"value="7"><span>Голубь</span></lable>
-         <lable><input type="checkbox"name="pets"value="8"><span>Краб</span></lable></p>
+      <label>
+        <input type="checkbox" name="pets" value="1"><span>Зебра</span>
+      </label>
+      <label>
+        <input type="checkbox" name="pets" value="2"><span>Кошак</span>
+      </label>
+      <label>
+        <input type="checkbox" name="pets" value="3"><span>Анаконда</span>
+      </label>
+      <label>
+        <input type="checkbox" name="pets" value="4"><span>Человек</span>
+      </label><br>
+      <label><br>
+        <input type="checkbox" name="pets" value="5"><span>Слон</span>
+      </label>
+      <label>
+        <input type="checkbox" name="pets" value="6"><span>Антилопа</span>
+      </label>
+      <label>
+        <input type="checkbox" name="pets" value="7"><span>Голубь</span>
+      </label>
+      <label>
+        <input type="checkbox" name="pets" value="8"><span>Краб</span>
+      </label>
     </fieldset>
-    <br><input type="submit"value="Отправить информацию">
+    <br><input type="submit" value="Отправить информацию">
 </form>
 </body>
 </html>
