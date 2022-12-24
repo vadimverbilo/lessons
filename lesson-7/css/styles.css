@@ -128,7 +128,7 @@ li {
 .btn_1:first-child {
     margin-right: 60px;
 }
-.btn_2,.btn_6:hover {
+.btn_2,.btn_6 {
     background-color: #E31E24;
     color: #fff;
 }
