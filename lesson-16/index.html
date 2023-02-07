@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat Alternates" rel="stylesheet" type="text/css">
+	<title>Validate form</title>
+</head>
+<body onload="Init()">
+
+<div class="container">
+
+	<form action="#" name="form">
+
+		<div class="input-wrap">
+			<input type="text" placeholder="Enter your name" name="name" id="name"/>
+			<label for="name">Required to enter</label>
+		</div>
+
+		<div class="input-wrap">
+			<input type="text" placeholder="Enter your phone number" name="phone" id="phone"/>
+			<label for="phone">Phone number only</label>
+		</div>
+
+		<label class="checkbox-agree">
+			<input type="checkbox" id="checked"/>
+			<div class="checkbox-checkmark"></div>
+			<div class="checkbox-body">Agreement</div>
+		</label>
+
+		<div class="button">
+			<input type="submit" id="button" value="Send" onclick="toggleButton(this.form)"/>
+		</div>
+
+	</form>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
