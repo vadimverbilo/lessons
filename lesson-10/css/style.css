@@ -1,0 +1,92 @@
+@font-face {
+ font-family: 'Montserrat Alternates', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0; 
+}
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+    background: rgd(33, 33, 33); 
+    overflow: hidden; 
+}
+.preload-wrapper {
+    position: relative; 
+    width: 300px;
+    height: 300px; 
+}
+.preload-first,.preload-second {
+    position: absolute;
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%; 
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+} 
+.preload-second {
+    transform: rotate(45deg);
+}
+.one,.five {
+    border-top: 5px solid #3fba6d99;
+}
+.two,.six {
+    border-right: 5px solid #e47d2959;   
+} 
+.three,.seven {
+    border-bottom: 5px solid #32c5c599;
+}
+.four,.eight {
+    border-left: 5px solid #d9d9; 
+}
+.one {
+    top: -210px;
+}
+.two {
+    right: -210px;
+}
+.three {
+    bottom: -210px;
+}
+.four {
+    left: -210px;
+}
+.five {
+    right: -150px;
+    bottom: 150px; 
+}
+.six {
+    left: 150px; 
+    top: 150px;
+}
+.seven {
+    left: -150px; 
+    top: 150px;
+}
+.eight {
+    right: 150px;
+    top: -150px;
+}
+@keyframes move-one {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes move-two {
+    from {transform: rotate(45deg);}
+    to {transform: rotate(405deg);}
+}
+.preload-first {
+    animation: move-one 2.1s infinite linear;
+    -webkit-animation: move-one 2.3s infinite linear;
+}
+.preload-second {
+    transform: rotate(45deg);
+    animation: move-two 2.1s infinite linear;
+    -webkit-animation: move-two 2.3s infinite linear;
+} 
