@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Semibold.eot');
+}
+*, :before, :after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+body {
+    width: 100%; 
+    height: 100%;
+}
+main {
+    margin: auto;
+    max-width: 1400px;
+    height: 100%;  
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    background: #fff; 
+    color: #000; 
+    position: relative; 
+}
+h1 {
+  	font-size: 35px;
+  	line-height: 100%;
+}
+article { 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;  
+    margin-top: 60px; 
+}
+ul { 
+    list-style: none;  
+    max-width: 920px;
+    box-shadow: 0px 0px 4px #C7C7C7;
+    border-radius: 5px;   
+} 
+li { 
+    padding: 25px 500px 25px 30px;
+    border: 1px solid  #ECECEC;   
+}
+li:hover {
+    background: #ECECEC;
+    box-shadow: 0px 0px 6px #C7C7C7;
+    cursor: pointer; 
+}   
+.title {
+    display: inline-block;  
+    font-size: 20px;
+    color: #000; 
+    text-decoration: none;
+}
+.checkbox {
+    margin-left: 830px;  
+    margin-top: -17px;  
+}
+.hidden-checkbox {
+    -webkit-appearance: none;
+    position: absolute; 
+} 
+.image {
+    position: absolute; 
+    margin-left: 950px; 
+}
+.accordion {
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.5s; 
+}
+.panel {
+    background-color: #daedf4; 
+    display: none;
+    overflow: hidden;
+    border-radius: 3px;    
+    text-align: left; 
+} 
+.text {
+    display:none;
+    margin: 5px 20px 5px 20px;
+    width: 100%; 
+}
+.button {
+    display: none; 
+    margin-left: 830px;  
+    margin-top: -17px;  
+}
+.dropbutton {
+    margin-left: 830px;  
+    margin-top: -17px;  
+}
+.button:checked ~ .text {
+    display:block;
+}
+.button:checked ~.icon {
+    transform: rotate(180deg);
+}
+
+
+
+
