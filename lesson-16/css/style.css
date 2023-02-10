@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #d7cac5, #ace0f9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+.input-wrap {
+    height: 50px;
+    width: 50%;
+    margin-bottom: 30px;
+}
+.input-wrap input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #f0f1f8;
+    padding: 0 20px;
+    margin-bottom: 2px;
+}
+.input-wrap label {
+    font-size: 14px;
+    color: #afafb6;
+    padding-left: 5px;
+}
+.button {
+    display:inline-flex;
+    position: absolute;
+}
+.button input[type="submit"] {
+    color: #fff;
+    font-size: 18px;
+    background: #21a49a;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 0.2s;
+    margin:  50px 0 0 -145px;
+}
+.button input[type="submit"]:hover {
+    background: rgb(43, 201, 196);
+}
+.checkbox-agree {
+    display: inline-block;
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+.checkbox-agree input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox-agree input:checked ~ .checkbox-checkmark {
+    background-color: #fff;
+}
+.checkbox-agree input:checked ~ .checkbox-checkmark:after {
+    opacity: 1;
+}
+.checkbox-agree:hover input ~ .checkbox-checkmark {
+    background-color: #eee;
+}
+.checkbox-agree:hover input:checked ~ .checkbox-checkmark {
+    background-color: #fff;
+}
+.checkbox-agree
+.checkbox-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: none;
+    transition: background-color 0.25s ease;
+    border-radius: 3px;
+}
+.checkbox-agree
+.checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: -3px;
+    width: 7px;
+    height: 15px;
+    border:solid #20980c;
+    border-width: 0 1px 1px 0;
+    transform: rotateZ(45deg);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+.checkbox-agree
+.checkbox-body {
+    color: #697369;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+
